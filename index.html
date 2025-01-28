@@ -1,1 +1,198 @@
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shoe Product Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .carousel-item img {
+            height: 450px;
+            object-fit: scale-down;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Shoe Haven</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Column 1: Product Image -->
+            <div class="col-md-6">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://media.istockphoto.com/id/1350560575/photo/pair-of-blue-running-sneakers-on-white-background-isolated.jpg?s=612x612&w=0&k=20&c=A3w_a9q3Gz-tWkQL6K00xu7UHdN5LLZefzPDp-wNkSU=" class="d-block w-100" alt="Shoe 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://lh3.googleusercontent.com/proxy/bjw5KkysmzmfXA_bL34LbtNda5erG0YJLd24XvzyyFsFSSj3xkxT4B5BHysL549XFw5MfjzFqpYAB7RWm-6aBUzUwOXXPq6faKWld32iejzVPvJn8nRYQy290ec2ZkjKNnF0HOUmPImxbLyMzC23WA" class="d-block w-100" alt="Shoe 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://img.freepik.com/free-photo/pair-trainers_144627-3799.jpg" class="d-block w-100" alt="Shoe 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Column 2: Product Description -->
+            <div class="col-md-6">
+                <h1>Comfort Runner Sneakers</h1>
+                <p class="lead">Stylish, durable, and built for performance</p>
+
+                <div class="my-4">
+                    <h3 class="text-primary">$149.99</h3>
+                    <button class="btn btn-success">Add to Cart</button>
+                </div>
+
+                <div class="my-4">
+                    <h5>Available Colors:</h5>
+                    <button class="btn btn-light border me-2" style="background-color: #000;" aria-label="Black"></button>
+                    <button class="btn btn-light border me-2" style="background-color: #ff5733;" aria-label="Red"></button>
+                    <button class="btn btn-light border" style="background-color: #007bff;" aria-label="Blue"></button>
+                </div>
+
+                <div class="my-4">
+                    <h5>Select Size:</h5>
+                    <select class="form-select w-50">
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                    </select>
+                </div>
+
+                <div>
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Breathable mesh upper for all-day comfort</li>
+                        <li>Lightweight and durable design</li>
+                        <li>Anti-slip rubber sole for superior grip</li>
+                        <li>Padded collar and insole for extra support</li>
+                        <li>Eco-friendly materials</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accordion -->
+        <div class="row" id="products">
+            <div class="col-12">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Product Description
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>The Comfort Runner Sneakers are designed to meet the demands of both style and performance. With a modern aesthetic and cutting-edge materials, these sneakers ensure you look and feel great wherever you go.</p>
+                                <p>Perfect for casual outings, running, or even light hikes, the sneakers offer exceptional durability and support.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Technical Specifications
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <table class="table">
+                                    <tr>
+                                        <td>Material</td>
+                                        <td>Mesh, Rubber</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Weight</td>
+                                        <td>300g per shoe</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Closure</td>
+                                        <td>Laces</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Available Sizes</td>
+                                        <td>7, 8, 9, 10, 11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty</td>
+                                        <td>1 Year</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4 mt-4">
+        <div class="container text-center">
+            <div class="mb-3">
+                <a href="#" class="me-3"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                <a href="#" class="me-3"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a href="#" class="me-3"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            </div>
+
+            <p>&copy; 2025 Shoe Haven. All Rights Reserved.</p>
+
+            <div>
+                <a href="#" class="text-dark me-3">Privacy Policy</a>
+                <a href="#" class="text-dark me-3">Terms of Service</a>
+                <a href="#" class="text-dark">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
